@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="pt-BR" trgLang="pt-BR">
+  <file id="messages.pt_BR">
+    <unit id="OPxagAY" name="general.phrase.none">
+      <segment>
+        <source>general.phrase.none</source>
+        <target>general.phrase.none</target>
+      </segment>
+    </unit>
+    <unit id="UNBaDz." name="general.phrase.edit">
+      <segment>
+        <source>general.phrase.edit</source>
+        <target>Editar</target>
+      </segment>
+    </unit>
+    <unit id="HVWUxDF" name="main_menu.homepage">
+      <segment>
+        <source>main_menu.homepage</source>
+        <target>Inicio</target>
+      </segment>
+    </unit>
+    <unit id="MZdqA2B" name="main_menu.products">
+      <segment>
+        <source>main_menu.products</source>
+        <target>Produtos</target>
+      </segment>
+    </unit>
+    <unit id="vbQc3Bp" name="main_menu.about">
+      <segment>
+        <source>main_menu.about</source>
+        <target>Sobre</target>
+      </segment>
+    </unit>
+    <unit id="5kIkAug" name="main_menu.contact">
+      <segment>
+        <source>main_menu.contact</source>
+        <target>Contacto</target>
+      </segment>
+    </unit>
+    <unit id="vPm9SC3" name="lr_menu.login">
+      <segment>
+        <source>lr_menu.login</source>
+        <target>Login</target>
+      </segment>
+    </unit>
+  </file>
+</xliff>
