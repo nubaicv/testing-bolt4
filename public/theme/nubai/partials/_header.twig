@@ -1,20 +1,22 @@
 <!-- Header bar -->
-<header>
-    <h2>header</h2>
-    <div id="nav-wrapper" class="w3-padding-32 w3-display-container w3-teal">
-        <div class="w3-container w3-display-left">
-            {{ menu(
-                name = 'main_menu',
-                template = 'partials/_sub_menu_header.twig',
-                withsubmenus = false
-            ) }}
-        </div>
-        <div class="w3-container w3-display-right">
-            {{ menu(
-                name = 'log_reg',
-                template = 'partials/_sub_menu_header_langselect.twig',
-                withsubmenus = false
-            ) }}
+<header class="w3-teal">
+    <div id="header-wrapper" class="w3-container">
+        <h1><a href="{{ path('homepage') }}">logo</a></h1>
+        <div id="nav-wrapper" class="w3-padding-32 w3-display-container">
+            <div class="w3-display-left">
+                {{ menu(
+                    name = 'main_menu',
+                    template = 'partials/_sub_menu_header.twig',
+                    withsubmenus = false
+                ) }}
+            </div>
+            <div class="w3-display-right">
+                {{ menu(
+                    name = 'log_reg',
+                    template = 'partials/_sub_menu_header_langselect.twig',
+                    withsubmenus = false
+                ) }}
+            </div>
         </div>
     </div>
 </header>

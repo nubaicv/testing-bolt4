@@ -6,30 +6,38 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>
             {%- if record|default and record.title -%}
-                {{- record.title ~ ' | ' -}}
+            {{- record.title ~ ' | ' -}}
             {%- endif -%}
             {{- config.get('general/sitename') -}}
             {%- if record|default == null and config.has('general/payoff') -%}
-                {{- ' | ' ~ config.get('general/payoff') -}}
+            {{- ' | ' ~ config.get('general/payoff') -}}
             {%- endif -%}
         </title>
-         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
         <link rel="stylesheet" href="{{ asset('css/_main.css') }}">
     </head>
     <body>
-        <div id="page" class="w3-container">
-        {% block body %}
+        <div id="page" class="">
+            {% block body %}
 
-            {{ include('partials/_header.twig') }}
+                {{ include('partials/_header.twig') }}
 
-            {% block main %}
-            {% endblock main %}
+                <main>
+                    <div id="main-wrapper" class="w3-container">
 
-            {{ include('partials/_aside.twig') }}
+                        {% block main %}
+                        {% endblock main %}
 
-        {% endblock body %}
+                    </div>
+                </main>
 
-        {{ include('partials/_footer.twig') }}
+                {{ include('partials/_aside.twig') }}
+
+            {% endblock body %}
+
+            {{ include('partials/_footer.twig') }}
         </div> <!-- end page -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="{{ asset('js/_main.js') }}"></script>
     </body>
 </html>

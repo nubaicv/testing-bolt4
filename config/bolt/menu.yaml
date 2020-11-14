@@ -29,16 +29,16 @@ foo: bar
 main_menu:
     - label: main_menu.homepage
       title: Pagina principal
-      link: /homepage
+      link: homepage
     - label: main_menu.products
       title: Os nossos produtos
-      link: /pages/products
+      link: pages/products
     - label: main_menu.about
       title: Sobre nossa empresa
-      link: /pages/about
+      link: pages/about
     - label: main_menu.contact
       title: Os nossos contactos
-      link: /pages/contact
+      link: pages/contact
 
 log_reg:
     - label: lr_menu.login

@@ -1,0 +1,10 @@
+{% extends 'partials/_master.twig' %}
+
+{% block main %}
+
+    <h1>Login page</h1>
+    {% if request %}
+        {{ dump(request) }}
+    {% endif %}
+
+{% endblock main %}
